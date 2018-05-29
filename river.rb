@@ -23,4 +23,9 @@ class River
     def remove_fish(fish)
       @fishes.delete(fish)
     end
+
+    def remove_all_fishes()
+      @fishes = []
+    end
+
   end

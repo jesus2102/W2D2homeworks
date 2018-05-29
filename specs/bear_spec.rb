@@ -33,10 +33,7 @@ class BearTest < MiniTest::Test
     assert_equal(0, @river.count_fishes())
   end
 
-
-  # def test_pick_up_from_stop
-  #   @bus.test_pick_up_from_stop(@bus_stop)
-  #   assert_equal(2, @bus.number_of_passengers())
-  #   assert_equal(0, @bus_stop.lenght_queue())
-  # end
+  def test_bear_roar
+    assert_equal("Roooooar!", @bear.bear_roar("Roooooar"))
+  end
 end

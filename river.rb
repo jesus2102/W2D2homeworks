@@ -14,4 +14,8 @@ class River
     def count_fishes()
       return @fishes.count()
     end
+
+    def add_fish(fish)
+      @fishes.push(fish)
+    end
   end

@@ -20,9 +20,14 @@ class River
       @fishes.push(fish)
     end
 
-    def remove_fish(fish)
-      @fishes.delete(fish)
+    def remove_fish
+      random = @fishes.shuffle()
+      random_fish = random.pop()
+      @fishes.delete(random_fish)
     end
+    # def remove_fish(fish)
+    #   @fishes.delete(fish)
+    # end
 
     def remove_all_fishes()
       @fishes = []

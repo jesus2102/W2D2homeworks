@@ -2,7 +2,7 @@ class Bear
 
   def initialize(name, type)
     @name = name
-    @type =
+    @type = type
     @stomach = []
   end
 
@@ -11,10 +11,14 @@ class Bear
   end
 
   def bear_eats(river)
-    for fish in river.fishes()
-      @stomach << fish
-    end
-    river.remove_all_fishes()
+
+    fish = river.remove_fish()
+    @stomach << fish if !fish.nil?
+
+    # for fish in river.fishes()
+    #   @stomach << fish
+    # end
+    # river.remove_all_fishes()
   end
 
   def bear_roar(roar)
